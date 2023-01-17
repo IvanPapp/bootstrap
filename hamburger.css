@@ -290,7 +290,7 @@ footer{
     html, body{
         height: 100vh;
         background-size: contain;
-        width: 98vw;
+        width: 100%;
     }
 
     main, header, footer{
@@ -457,7 +457,7 @@ footer{
     body, html{
         height: 100vh;
         background-size: contain;
-        width: 98vw;
+        width: 100%;
     }
 
     main, header, footer{
