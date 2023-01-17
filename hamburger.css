@@ -11,7 +11,7 @@ html, body{
     justify-content: center;
     background-image: url(./11.jpg);
     background-size: cover;
-    width: 100vw;
+    width: 99vw;
 
 }
 
@@ -316,7 +316,7 @@ footer{
     }
 
     main{
-        width: 90vw;
+        width: 85vw;
         box-shadow:  0 0 2px white,
                  0 0 8px white, 
                  0 0 13px white,
@@ -455,10 +455,10 @@ footer{
         padding-right: 7vw;
     }
 
-    body{
+    html, body{
         height: 100vh;
         background-size: contain;
-        width: 100vw;
+        width: 99vw;
     }
 
     main, header, footer{
@@ -483,7 +483,7 @@ footer{
     }
 
     main{
-        width: 90vw;
+        width: 85vw;
         box-shadow:  0 0 2px white,
                  0 0 8px white, 
                  0 0 13px white,
