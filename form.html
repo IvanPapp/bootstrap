@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRG Szolárium Stúdió</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo&family=Montserrat:wght@300&family=Oleo+Script+Swash+Caps&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="./index.html"><img src="./nrg_szolarium_logo_PNG.PNG" alt="Logo"></a>
+            </div>
+            <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <span class="menuIcon material-icons">menu</span>
+                <span class="closeIcon material-icons">close</span>
+              </button>
+
+            <div class="menu">
+                <ul class="menuItems"> 
+                    <li><a href="./hamburger.html">Főoldal </a></li>
+                    <li><a href="./about.html">Rólunk</a></li>
+                    <li><a href="./prices.html">Árak</a></li>
+                    <li><a href="./gallery.html">Galéria</a></li>
+                    <li><a href="./form.html">Kérdőív</a></li>
+                    <li><a href="./contact.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+
+        </header>
+        <main>
+            <h1>Mennyire volt elégedett a szolgáltatás minőségével?</h1>
+                <form action="feldolgoz.php" method="post">
+                    <div id="adatok">
+                        <div class="name">
+                            <label for="nev">Név</label>
+                            <input type="text" name="nev" id="nev" placeholder="Tetszőleges">
+                        </div>
+                        <div class="sex">
+                            <label for="nem">Neme</label>
+                            <input type="text" name="neme" id="neme" placeholder="Nem kötelező">
+                        </div>
+                    </div>
+                    <h2>Kiszolgálás minősége</h2>
+                    <div id="rate">
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                    </div>
+                    <h2>A szoláriumozás élménye</h2>
+                    <div id="rate">
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                    </div>
+                    <h2>Tisztaság és higiénia</h2>
+                    <div id="rate">
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                    </div>
+                    <div id="text">
+                        <legend> Észrevételek / javaslatok</legend>
+                        <textarea name="javaslat" id="javaslat"  required placeholder="Kérjük írja le észrevételeit / javaslatait, hogy legközelebb még jobban érezhesse magát nálunk"></textarea>
+                    <div id="submit">
+                        <input type="submit" value="Elküld">
+                        <input type="reset" value="Mezők törlése">
+                    </div>    
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="nev">
+                <h3>
+                    NRG Szolárium Stúdió
+                </h3>
+                <p>
+                    1039 Bp. Pünkösdfürdő u. 48/A Fsz.
+                </p>
+            </div>
+            <div class="opening">
+                <p>
+                    Nyitvatartás: 9:00 - 21:00
+                </p>
+                <p>
+                    Tel.:+36 70 255-1245
+                </p>
+            </div>    
+            <div class="social">
+                <a href="http://www.facebook.com/nrgszoli" target="_blank"><img src="./face.png" alt="Facebook"></a> 
+                <a href="http://www.instagram.com/@nrg.szolarium" target="_blank"><img src="./insta.png" alt="instagram"></a> 
+            </div>
+        </footer>
+    </div>
+<script src="./hamburger.js"></script>
+</body>
+</html>

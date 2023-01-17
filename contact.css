@@ -1,0 +1,389 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./11.jpg);
+    background-size: cover;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+    grid-auto-flow: dense;
+    margin: 1rem;             
+    max-width: 80vw; 
+    justify-items: center; 
+    align-items: center;                      
+    
+  }
+                        
+
+
+.logo img{
+    grid-area: logo;
+    margin: .2rem;
+    width: 8vw;
+    filter: drop-shadow(0rem .1rem .3rem rgba(204, 126, 204, 0.76))
+    drop-shadow(0rem .1rem .3rem rgb(205, 129, 205))
+    drop-shadow(0rem .1rem .3rem rgb(222, 138, 222));
+
+}
+
+header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        width: 90vw;
+        margin: 1rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        display: grid;
+        grid-template-areas: "logo nav";
+        justify-items: center;
+        align-items: center;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.833) 0px -10px 20px, 
+        rgba(0, 0, 0, 0.59) 0px -10px 20px;
+    
+    }
+
+.hamburger{
+    display: none;
+    position: sticky;
+    position: -webkit-sticky;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.menu{
+    display: flex;
+    grid-area: nav;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.menuItems li{
+    justify-content:center;
+    list-style-type: none;
+    padding: .2vw;
+}
+
+.menuItems a{
+    display: flex;
+    overflow: hidden;
+    color: rgb(134, 21, 152);
+    padding: 1rem 1.2rem;
+    margin-right: .1rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9vw;
+}
+
+
+  
+  .menu a:hover{
+    cursor: pointer;
+    color: rgb(137, 5, 157);
+    text-shadow: 0px -5px 3px rgb(223, 60, 248);
+    transform: scale(1.25);
+  }
+
+ 
+  main{
+    grid-area: main;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: "cim"
+                         "add"
+                         "map";
+    width: 85vw;
+    margin: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    box-shadow:  0 0 2px white,
+                 0 0 10px white, 
+                 0 0 20px white,
+                 0 0 15px 15px rgba(218, 66, 241, 0.703),
+                 0 0 30px 30px rgba(218, 66, 241, 0.592),
+                 0 0 45px 45px rgba(218, 66, 241, 0.492);
+                  
+
+}
+
+main h1{
+    grid-area: cim;
+    text-align: center;
+    font-size: 3vw;
+    margin: 3vw;
+    font-weight: 700;
+    text-shadow: 0 1px 1px black;
+
+}
+.map{
+    grid-area: map;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+}
+.map iframe{
+    width: 60vw;
+    height: 70vh;
+    border-radius: 4px;
+}
+
+.add{
+    grid-area: add;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add p{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: .5px 1px black;
+
+}
+
+.add a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: rgb(255, 5, 255);
+    text-shadow: 1px 1px black;
+
+}
+
+.add legend{
+    font-size: 1vw;
+}
+
+
+
+footer{
+    grid-area: footer;
+    width: 90vw;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+                        "nev opening social";
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 1.6vw;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.681) 0px 10px 20px, 
+    rgba(0, 0, 0, 0.532) 0px 10px 20px;
+
+}
+
+.nev{
+    grid-area: nev;
+
+}
+
+.nev p, h3{
+    text-align: center;
+}
+
+.nev h3{
+    text-shadow: 1px 1px black;
+}
+
+.opening{
+    padding-top: .3vw;
+    grid-area: opening;
+
+}
+.opening p{
+    text-align: center;
+
+}
+
+.opening a{
+    color: black;
+}
+
+.social {
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.social img{
+    max-width: 6vw;
+    padding: .6rem;
+}
+
+
+@media only screen and (max-width: 768px), (min-device-width: 600px) and (max-device-width: 900px){
+    
+    body{
+        height: 100vh;
+        background-size: contain;
+    }
+
+    main, header, footer{
+        margin: 2%;
+    }
+
+
+    .container{
+        height:101vh;
+        margin: 0;
+    }
+
+    header{
+        grid-template-areas: "logo ... button"
+                               "nav nav nav"      ;
+        justify-content:space-between;
+        align-items:center;
+        padding: 0 2%;
+        width: 95vw;
+
+        
+    }
+
+    main{
+        width: 90vw;
+        box-shadow:  0 0 2px white,
+                 0 0 8px white, 
+                 0 0 13px white,
+                 0 0 10px 10px rgba(218, 66, 241, 0.703),
+                 0 0 18px 18px rgba(218, 66, 241, 0.592),
+                 0 0 25px 25px rgba(218, 66, 241, 0.492);
+    }
+
+    .pic3{
+        padding: 0 3vw;
+    }
+
+    .logo img{
+        width: 10vw;
+    }
+
+    .hamburger{
+        display: flex;
+        grid-area: button;
+        max-width: 100vw;
+        z-index: 1;
+        border-radius: 4px;
+        background-color: rgba(218, 66, 241, 0.459);
+    }
+
+    .hamburger .closeIcon{
+        display: none;
+        font-size: 5vw;
+    }
+
+    .hamburger .menuIcon{
+        font-size: 5vw;
+    }
+
+    .menu{
+        flex-direction: row;
+        position: fixed;
+        justify-content: center;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: rgba(255, 255, 255, 0.95);
+        padding-top: 10%;
+        overflow: hidden;
+    }
+
+    .menuItems a{
+        font-size: 5vw;
+        justify-content: center;
+    }
+
+
+    .showMenu {
+        display: flex;
+        transform: translateY(0);
+        justify-content: center;
+    }
+
+    .menuItems{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+
+    main h1{
+        font-size: 4vw;
+    }
+
+    .add a, .add p{
+        font-size: 3vw;
+    }    
+
+    .map iframe{
+        height: 40vh;
+    }
+
+    .add legend{
+        font-size: 2vw;
+    }
+
+    footer{
+       width: 90vw;
+       grid-template-areas: "nev social"
+                            "opening social";
+        align-items: center;
+    }
+
+    .opening, .nev{
+        justify-content: center;
+        font-size: 3vw;
+    }
+
+    .social{
+        flex-direction: column;
+    }
+    .social img{
+        justify-content: center;
+        min-width: 10vw;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 600px){
+
+    .menuItems a{
+        padding-right: 7vw;
+    }
+}
+
+
+
