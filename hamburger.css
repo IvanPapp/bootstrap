@@ -88,7 +88,7 @@ header{
     display: flex;
     overflow: hidden;
     color: rgb(134, 21, 152);
-    padding: 1rem 1.2vw;
+    padding: 1vw 1.2vw;
     margin-right: .1vw;
     text-decoration: none;
     text-align: center;
@@ -120,7 +120,7 @@ main{
     width: 85vw;
     align-items: center;
     justify-content: center;
-    margin: 3.5rem;
+    margin: 3.5vw;
     padding-top: 2vw;
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid rgba(255, 255, 255, 0);
@@ -177,7 +177,7 @@ main h1{
     max-width: 40vw;
     border: 1px solid black;
     border-radius: 4px;
-    margin: 3rem 0;
+    margin: 3vw 0;
     
 
 }
@@ -186,7 +186,7 @@ main h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 1vw;
 
 }
 
