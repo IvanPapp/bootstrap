@@ -20,7 +20,7 @@ body{
     grid-template-areas: "header header header header"
                          "main main main main"
                          "footer footer footer footer";
-    width: 80vw; 
+   
     justify-items: center; 
     align-items: center;                      
     
