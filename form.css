@@ -21,7 +21,6 @@ body{
                          "main main main main"
                          "footer footer footer footer";
     grid-auto-flow: dense;
-    margin: 1rem;             
     max-width: 80vw; 
     justify-items: center; 
     align-items: center;                      
