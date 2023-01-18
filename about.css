@@ -431,7 +431,14 @@ footer{
         padding-right: 7vw;
     }
 }
+ .hamburger .closeIcon{
+        display: none;
+        font-size: 7vw;
+    }
 
+    .hamburger .menuIcon{
+        font-size: 7vw;
+    }
 
 
 
