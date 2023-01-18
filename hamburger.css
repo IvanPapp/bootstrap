@@ -441,19 +441,8 @@ footer{
         padding-right: 7vw;
     }
 
-    body{
-        height: 100vh;
-        background-size:auto;
-        width: 98vw;
-    }
 
     main, header, footer{
-        margin: 2%;
-    }
-
-
-    .container{
-        height:100vh;
         margin: 2%;
     }
 
@@ -497,11 +486,11 @@ footer{
 
     .hamburger .closeIcon{
         display: none;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .hamburger .menuIcon{
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .menu{
