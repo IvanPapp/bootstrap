@@ -424,6 +424,10 @@ footer{
         font-size: 3vw;
 
     }
+    
+main h2{
+    font-size: 2vw;
+}
 
 }
 
@@ -432,6 +436,10 @@ footer{
     .menuItems a{
         padding-right: 7vw;
     }
+}
+
+main h2{
+    font-size: 2vw;
 }
 
 
