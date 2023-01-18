@@ -12,9 +12,9 @@ body{
     background-image: url(./11.jpg);
     background-size: cover;
     backgroung-repeat: no-repeat;
+    overflow-x: hidden;
 
 }
-
 
 .container{
     display: grid;
