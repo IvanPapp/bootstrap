@@ -22,7 +22,6 @@ html, body{
     grid-template-areas: "header header header header"
                          "main main main main"
                          "footer footer footer footer";
-    margin: 1vw;             
     max-width: 80vw; 
     justify-items: center; 
     align-items: center;                      
@@ -33,11 +32,11 @@ html, body{
 
 .logo img{
         grid-area: logo;
-        margin: .2rem;
+        margin: .2vw;
         width: 8vw;
-        filter: drop-shadow(0rem .1rem .3rem rgba(204, 126, 204, 0.76))
-        drop-shadow(0rem .1rem .3rem rgb(205, 129, 205))
-        drop-shadow(0rem .1rem .3rem rgb(222, 138, 222));
+        filter: drop-shadow(0 .1vw .3vw rgba(204, 126, 204, 0.76))
+        drop-shadow(0 .1vw .3vw rgb(205, 129, 205))
+        drop-shadow(0 .1vw .3vw rgb(222, 138, 222));
 
 }
 
@@ -47,7 +46,7 @@ header{
         top: 0;
         grid-area: header;
         width: 90vw;
-        margin: 1rem;
+        margin: 1vw;
         background-color: rgba(255, 255, 255, 0.85);
         display: grid;
         grid-template-areas: "logo nav";
@@ -90,8 +89,8 @@ header{
     display: flex;
     overflow: hidden;
     color: rgb(134, 21, 152);
-    padding: 1rem 1.2rem;
-    margin-right: .1rem;
+    padding: 1rem 1.2vw;
+    margin-right: .1vw;
     text-decoration: none;
     text-align: center;
     font-weight: 600;
@@ -160,7 +159,7 @@ main h1{
 }
 
 .doboz1, .doboz2, .doboz3{
-    margin: 2rem;
+    margin: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,7 +171,7 @@ main h1{
     max-width: 40vw;
     border: 1px solid black;
     border-radius: 4px;
-    margin: 3rem 0;
+    margin: 3vw 0;
 
 }
 .pic3 img{
@@ -235,8 +234,8 @@ footer{
                         "nev opening social";
     border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 4px;
-    padding: .5rem;
-    margin: 1rem;
+    padding: .5vw;
+    margin: 1vw;
     background-color: rgba(255, 255, 255, 0.85);
     font-size: 1.6vw;
     font-weight: 600;
@@ -281,16 +280,16 @@ footer{
 
 .social img{
     max-width: 6vw;
-    padding: .6rem;
+    padding: .6vw;
 }
 
 
 @media only screen and (max-width: 768px), (min-device-width: 600px) and (max-device-width: 900px){
     
-    html, body{
+    body{
         height: 100vh;
-        background-size: contain;
-        width: 100%;
+        background-size: auto;
+        width: 100vw;
     }
 
     main, header, footer{
@@ -454,10 +453,10 @@ footer{
         padding-right: 7vw;
     }
 
-    body, html{
+    body{
         height: 100vh;
-        background-size: contain;
-        width: 100%;
+        background-size:auto;
+        width: 98vw;
     }
 
     main, header, footer{
@@ -467,7 +466,7 @@ footer{
 
     .container{
         height:100vh;
-        margin: 0;
+        margin: 2%;
     }
 
     header{
