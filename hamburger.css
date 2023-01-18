@@ -11,7 +11,7 @@ html, body{
     justify-content: center;
     background-image: url(./11.jpg);
     background-size: cover;
-    width: auto;
+    width: 100vh;
 
 }
 
@@ -287,18 +287,16 @@ footer{
 @media only screen and (max-width: 768px), (min-device-width: 600px) and (max-device-width: 900px){
     
     body{
-        height: 100vh;
         background-size: auto;
         width: 100vw;
     }
 
-    main, header, footer{
-        margin: 2%;
+/*     main, header, footer{
+        margin: 2vw;
     }
-
+ */
 
     .container{
-        height:100vh;
         margin: 0;
     }
 
@@ -307,7 +305,7 @@ footer{
                                "nav nav nav"      ;
         justify-content:space-between;
         align-items:center;
-        padding: 0 2%;
+        padding: 0 2vw;
         width: 95vw;
 
         
@@ -454,15 +452,14 @@ footer{
     }
 
     body{
-        height: 100vh;
         background-size:auto;
         width: 98vw;
     }
 
-    main, header, footer{
-        margin: 2%;
+/*     main, header, footer{
+        margin: 2vw;
     }
-
+ */
 
     .container{
         height:100vh;
