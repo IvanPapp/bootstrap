@@ -315,20 +315,13 @@ footer{
 
 @media only screen and (max-width: 760px), (min-device-width: 600px) and (max-device-width: 900px){
     
-    body{
-        height: 100vh;
-        background-size: contain;
-    }
+
 
     main, header, footer{
         margin: 2%;
     }
 
 
-    .container{
-        height:101vh;
-        margin: 0;
-    }
 
     header{
         grid-template-areas: "logo ... button"
@@ -379,14 +372,12 @@ footer{
 
     .hamburger .closeIcon{
         display: none;
-        font-size: 5vw;
-        z-index: 100;
-    }
+        font-size: 7vw;
+          }
 
     .hamburger .menuIcon{
-        font-size: 5vw;
-        z-index: 100;
-    }
+        font-size: 7vw;
+          }
 
     .menu{
         flex-direction: row;
@@ -430,7 +421,7 @@ footer{
       
 
     footer{
-       width: 90vw;
+       width: 95vw;
        grid-template-areas: "nev social"
                             "opening social";
         align-items: center;
