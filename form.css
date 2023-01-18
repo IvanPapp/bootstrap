@@ -343,20 +343,12 @@ footer{
 
 @media only screen and (max-width: 768px), (min-device-width: 600px) and (max-device-width: 900px){
     
-    body{
-        height: 100vh;
-        background-size: contain;
-    }
+
 
     main, header, footer{
         margin: 2%;
     }
 
-
-    .container{
-        height:101vh;
-        margin: 0;
-    }
 
     header{
         grid-template-areas: "logo ... button"
@@ -395,11 +387,11 @@ footer{
 
     .hamburger .closeIcon{
         display: none;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .hamburger .menuIcon{
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .menu{
