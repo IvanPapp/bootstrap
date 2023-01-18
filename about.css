@@ -293,11 +293,11 @@ footer{
 
     .hamburger .closeIcon{
         display: none;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .hamburger .menuIcon{
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .menu{
