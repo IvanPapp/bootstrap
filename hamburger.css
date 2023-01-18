@@ -19,7 +19,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     grid-template-areas: "header header header header"
                          "main main main main"
                          "footer footer footer footer";
