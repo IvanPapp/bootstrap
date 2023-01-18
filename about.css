@@ -254,7 +254,9 @@ footer{
     main h1{
         font-size: 3vw;
     }
-
+    main h2{
+        font-size: 2vw;
+    }
 
     header{
         grid-template-areas: "logo ... button"
@@ -431,14 +433,7 @@ footer{
         padding-right: 7vw;
     }
 }
- .hamburger .closeIcon{
-        display: none;
-        font-size: 7vw;
-    }
 
-    .hamburger .menuIcon{
-        font-size: 7vw;
-    }
 
 
 
