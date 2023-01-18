@@ -245,10 +245,7 @@ footer{
 
 @media only screen and (max-width: 768px), (min-device-width: 600px) and (max-device-width: 900px){
     
-    body{
-        height: 100vh;
-        background-size: contain;
-    }
+
 
     main, header, footer{
         margin: 2%;
@@ -258,11 +255,6 @@ footer{
         font-size: 3vw;
     }
 
-
-    .container{
-        height:100vh;
-        margin: 0;
-    }
 
     header{
         grid-template-areas: "logo ... button"
@@ -375,7 +367,7 @@ footer{
     }
 
     footer{
-       width: 90vw;
+       width: 95vw;
        grid-template-areas: "nev social"
                             "opening social";
         align-items: center;
