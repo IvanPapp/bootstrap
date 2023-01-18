@@ -21,8 +21,7 @@ body{
     grid-template-areas: "header header header header"
                          "main main main main"
                          "footer footer footer footer";
-    grid-auto-flow: dense;
-    max-width: 80vw; 
+    grid-auto-flow: dense; 
     justify-items: center; 
     align-items: center;                      
     
