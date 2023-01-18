@@ -6,7 +6,6 @@
 
 body{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(./11.jpg);
@@ -21,7 +20,7 @@ body{
     grid-template-areas: "header header header header"
                          "main main main main"
                          "footer footer footer footer";
-    max-width: 80vw; 
+    width: 80vw; 
     justify-items: center; 
     align-items: center;                      
     
